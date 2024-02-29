@@ -10,20 +10,15 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    window.cpp
+    widget.cpp
 
 HEADERS += \
-    window.h
+    widget.h
 
 FORMS += \
-    window.ui
+    widget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES += \
-    res.qrc
-
-RC_ICONS = editor.ico
