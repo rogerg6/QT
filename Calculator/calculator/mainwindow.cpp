@@ -40,6 +40,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_ops_pressed()
 {
     QPushButton *btn = (QPushButton*)sender();
+
     QString val = btn->text();
     current_input += val;
     ui->input->setText(current_input);
