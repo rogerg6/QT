@@ -34,7 +34,6 @@ void Widget::on_btnDec_clicked()
     ui->lineEdit2->setText(str);
 }
 
-
 void Widget::on_btnBin_clicked()
 {
     bool ok;
