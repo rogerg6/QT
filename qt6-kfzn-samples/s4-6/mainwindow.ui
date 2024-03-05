@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>711</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>滑动输入</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="topMargin">
+      <number>9</number>
+     </property>
+     <property name="bottomMargin">
+      <number>3</number>
+     </property>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>卷滚条</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QSlider" name="slider">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksAbove</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>滑动条</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QScrollBar" name="scroll">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <widget class="QDial" name="dial">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="notchesVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>721</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>ProgressBar显示和设置</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="leftMargin">
+      <number>41</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>200</number>
+     </property>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="chkInverted">
+       <property name="text">
+        <string>InvertedAppearence</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="chkTextVisiable">
+       <property name="text">
+        <string>textVisiable</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>进度条</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QRadioButton" name="btnPercentage">
+       <property name="text">
+        <string>显示格式-百分比</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QRadioButton" name="btnValue">
+       <property name="text">
+        <string>显示格式-当前值</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QProgressBar" name="progressBar">
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
