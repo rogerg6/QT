@@ -5,8 +5,9 @@
 #include <QLabel>
 #include <QStandardItemModel>
 #include <QItemSelectionModel>
-#include "DialogHeaders"
+#include "dialogheaders.h"
 #include "dialogsize.h"
+#include "dialoglocate.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -35,6 +36,12 @@ private slots:
     void do_model_currentChanged(const QModelIndex &current, const QModelIndex &previous);
 
     void on_actSetRC_triggered();
+
+    void on_actSetHeader_triggered();
+
+    void on_actCell_triggered();
+
+    void on_tableView_clicked(const QModelIndex &index);
 
 public slots:
     void do_setCellText(int row, int col, QString &text);
