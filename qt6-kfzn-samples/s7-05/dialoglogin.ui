@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogLogin</class>
+ <widget class="QDialog" name="DialogLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="labPic">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>6</y>
+     <width>388</width>
+     <height>260</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="res.qrc">:/images/back2.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>270</y>
+     <width>388</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>用户名</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditUsername"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>密码</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditPasswd"/>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="chkSaveUsername">
+      <property name="text">
+       <string>保存用户名</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnOK">
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnCancel">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogLogin</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
