@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>564</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="btnTestFile">
+            <property name="text">
+             <string>测试用文件</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditFile"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>字节序</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QRadioButton" name="rBtnLE">
+               <property name="text">
+                <string>LittleEndian</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rBtnBE">
+               <property name="text">
+                <string>BigEndian</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="title">
+             <string>浮点数精度</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QRadioButton" name="rBtnSingle">
+               <property name="text">
+                <string>Single</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rBtnDouble">
+               <property name="text">
+                <string>Double</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>预编码数据序列化方式读写测试</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="spinInt8"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>qint8(-128~127)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>qint64</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>char * string</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLineEdit" name="editInt16Out"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>quint8(0~255)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>qint16(-32768~32767</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="btnInt16Read">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="btnInt8Write">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>double</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLineEdit" name="editInt8Out"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>quint16(0~65535)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>qint32</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>QFont</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="btnInt16Write">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>qfloat16</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>float</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="btnUint8Write">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLineEdit" name="editUint8Out"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spinUint8"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="spinInt16"/>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="btnInt8Read">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Bool</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="btnUint8Read">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>QString</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>QColor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="spinUint16"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QSpinBox" name="spinInt32"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QSpinBox" name="spinInt64"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="QCheckBox" name="chkBoolIn">
+          <property name="text">
+           <string>布尔值</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QDoubleSpinBox" name="spinFloat16"/>
+        </item>
+        <item row="8" column="1">
+         <widget class="QDoubleSpinBox" name="spinFloat"/>
+        </item>
+        <item row="9" column="1">
+         <widget class="QDoubleSpinBox" name="spinDouble"/>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLineEdit" name="editStrIn"/>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLineEdit" name="editQStrIn"/>
+        </item>
+        <item row="12" column="1">
+         <widget class="QPushButton" name="btnFontIn">
+          <property name="text">
+           <string>选择字体</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="QPushButton" name="btnColorIn">
+          <property name="text">
+           <string>选择颜色</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="btnUint16Write">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="btnInt32Write">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QPushButton" name="btnInt64Write">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QPushButton" name="btnBoolWrite">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="QPushButton" name="btnFloat16Write">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QPushButton" name="btnUint16Read">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QPushButton" name="btnInt32Read">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QPushButton" name="btnInt64Read">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QPushButton" name="btnBoolRead">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="3">
+         <widget class="QPushButton" name="btnFloat16Read">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QPushButton" name="btnFloatWrite">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="QPushButton" name="btnFloatRead">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QPushButton" name="btnDoubleWrite">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="3">
+         <widget class="QPushButton" name="btnDoubleRead">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="2">
+         <widget class="QPushButton" name="btnStrWrite">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="3">
+         <widget class="QPushButton" name="btnStrRead">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <widget class="QPushButton" name="btnQStrWrite">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="3">
+         <widget class="QPushButton" name="btnQStrRead">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="2">
+         <widget class="QPushButton" name="btnFontWrite">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="3">
+         <widget class="QPushButton" name="btnFontRead">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="2">
+         <widget class="QPushButton" name="btnColorWrite">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="3">
+         <widget class="QPushButton" name="btnColorRead">
+          <property name="text">
+           <string>读出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLineEdit" name="editUint16Out"/>
+        </item>
+        <item row="4" column="4">
+         <widget class="QLineEdit" name="editInt32Out"/>
+        </item>
+        <item row="5" column="4">
+         <widget class="QLineEdit" name="editInt64Out"/>
+        </item>
+        <item row="6" column="4">
+         <widget class="QCheckBox" name="chkBoolOut">
+          <property name="text">
+           <string>布尔值</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="4">
+         <widget class="QLineEdit" name="editFloat16Out"/>
+        </item>
+        <item row="8" column="4">
+         <widget class="QLineEdit" name="editFloatOut"/>
+        </item>
+        <item row="9" column="4">
+         <widget class="QLineEdit" name="editDoubleOut"/>
+        </item>
+        <item row="10" column="4">
+         <widget class="QLineEdit" name="editStrOut"/>
+        </item>
+        <item row="11" column="4">
+         <widget class="QLineEdit" name="editQStrOut"/>
+        </item>
+        <item row="12" column="4">
+         <widget class="QLineEdit" name="editFontOut"/>
+        </item>
+        <item row="13" column="4">
+         <widget class="QLineEdit" name="editColorOut"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionEditClear"/>
+   <addaction name="actionWriteCon"/>
+   <addaction name="actionReadCon"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <action name="actionEditClear">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/214.bmp</normaloff>:/icons/images/214.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>编辑框全清空</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionWriteCon">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/saveall1.bmp</normaloff>:/icons/images/saveall1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>连续写入文件</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionReadCon">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/upfold1.bmp</normaloff>:/icons/images/upfold1.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>连续从文件读取</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/images/132.bmp</normaloff>:/icons/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
